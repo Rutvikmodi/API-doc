@@ -736,6 +736,10 @@ margin-bottom: 20px;
                     <li data-group="DetailsOfAllBookings" data-name="bookingAlldetailsGet" class="">
                       <a href="#api-DetailsOfAllBookings-bookingAlldetailsGet">bookingAlldetailsGet</a>
                     </li>
+                  <li class="nav-header" data-group="Recommendations"><a href="#api-Recommendations">API Methods - Recommendations</a></li>
+                    <li data-group="Recommendations" data-name="getrecommendationsUserIdDateGet" class="">
+                      <a href="#api-Recommendations-getrecommendationsUserIdDateGet">getrecommendationsUserIdDateGet</a>
+                    </li>
                   <li class="nav-header" data-group="SignIn"><a href="#api-SignIn">API Methods - SignIn</a></li>
                     <li data-group="SignIn" data-name="signinPost" class="">
                       <a href="#api-SignIn-signinPost">signinPost</a>
@@ -2446,6 +2450,365 @@ except ApiException as e:
                                     </script>
                                   </div>
                                   <input id='responses-bookingAlldetailsGet-200-schema-data' type='hidden' value=''></input>
+                                </div>
+                            </div>
+
+                            <h3> Status: 404 - Something&#39;s wrong </h3>
+
+                            <ul class="nav nav-tabs nav-tabs-examples" >
+                            </ul>
+
+                            <div class="tab-content" style='margin-bottom: 10px;'>
+                            </div>
+
+                        </article>
+                      </div>
+                      <hr>
+                  </section>
+                <section id="api-Recommendations">
+                  <h1>Recommendations</h1>
+                    <div id="api-Recommendations-getrecommendationsUserIdDateGet">
+                      <article id="api-Recommendations-getrecommendationsUserIdDateGet-0" data-group="User" data-name="getrecommendationsUserIdDateGet" data-version="0">
+                        <div class="pull-left">
+                          <h1>getrecommendationsUserIdDateGet</h1>
+                          <p>Give details of bookings of team-mates.</p>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                        <p></p>
+                        <p class="marked"></p>
+                        <p></p>
+                        <br />
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/getrecommendations/{userId}/{date}</span></code></pre>
+                        <p>
+                          <h3>Usage and SDK Samples</h3>
+                        </p>
+                        <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active"><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-curl">Curl</a></li>
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-java">Java</a></li>
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-android">Android</a></li>
+                          <!--<li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-groovy">Groovy</a></li>-->
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-objc">Obj-C</a></li>
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-javascript">JavaScript</a></li>
+                          <!--<li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-angular">Angular</a></li>-->
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-csharp">C#</a></li>
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-php">PHP</a></li>
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-perl">Perl</a></li>
+                          <li class=""><a href="#examples-Recommendations-getrecommendationsUserIdDateGet-0-python">Python</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-curl">
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://exp1spring.herokuapp.com/desking/getrecommendations/{userId}/{date}"</code></pre>
+                          </div>
+                          <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-java">
+                            <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
+import io.swagger.client.auth.*;
+import io.swagger.client.model.*;
+import io.swagger.client.api.RecommendationsApi;
+
+import java.io.File;
+import java.util.*;
+
+public class RecommendationsApiExample {
+
+    public static void main(String[] args) {
+        
+        RecommendationsApi apiInstance = new RecommendationsApi();
+        Integer userId = 56; // Integer | Numeric ID of the user
+        String date = date_example; // String | Date of the booking
+        try {
+            array[Object] result = apiInstance.getrecommendationsUserIdDateGet(userId, date);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling RecommendationsApi#getrecommendationsUserIdDateGet");
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-android">
+                            <pre class="prettyprint"><code class="language-java">import io.swagger.client.api.RecommendationsApi;
+
+public class RecommendationsApiExample {
+
+    public static void main(String[] args) {
+        RecommendationsApi apiInstance = new RecommendationsApi();
+        Integer userId = 56; // Integer | Numeric ID of the user
+        String date = date_example; // String | Date of the booking
+        try {
+            array[Object] result = apiInstance.getrecommendationsUserIdDateGet(userId, date);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling RecommendationsApi#getrecommendationsUserIdDateGet");
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                          </div>
+  <!--
+  <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-groovy">
+  <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+  </div> -->
+                            <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-objc">
+                              <pre class="prettyprint"><code class="language-cpp">Integer *userId = 56; // Numeric ID of the user
+String *date = date_example; // Date of the booking
+
+RecommendationsApi *apiInstance = [[RecommendationsApi alloc] init];
+
+// Give details of bookings of team-mates.
+[apiInstance getrecommendationsUserIdDateGetWith:userId
+    date:date
+              completionHandler: ^(array[Object] output, NSError* error) {
+                            if (output) {
+                                NSLog(@"%@", output);
+                            }
+                            if (error) {
+                                NSLog(@"Error: %@", error);
+                            }
+                        }];
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-javascript">
+                              <pre class="prettyprint"><code class="language-js">var DeskingApplicationApi = require('desking_application_api');
+
+var api = new DeskingApplicationApi.RecommendationsApi()
+
+var userId = 56; // {Integer} Numeric ID of the user
+
+var date = date_example; // {String} Date of the booking
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getrecommendationsUserIdDateGet(userId, date, callback);
+</code></pre>
+                            </div>
+
+                            <!--<div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-angular">
+              <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+            </div>-->
+                            <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-csharp">
+                              <pre class="prettyprint"><code class="language-cs">using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class getrecommendationsUserIdDateGetExample
+    {
+        public void main()
+        {
+            
+            var apiInstance = new RecommendationsApi();
+            var userId = 56;  // Integer | Numeric ID of the user
+            var date = date_example;  // String | Date of the booking
+
+            try
+            {
+                // Give details of bookings of team-mates.
+                array[Object] result = apiInstance.getrecommendationsUserIdDateGet(userId, date);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling RecommendationsApi.getrecommendationsUserIdDateGet: " + e.Message );
+            }
+        }
+    }
+}
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-php">
+                              <pre class="prettyprint"><code class="language-php"><&#63;php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new Swagger\Client\Api\RecommendationsApi();
+$userId = 56; // Integer | Numeric ID of the user
+$date = date_example; // String | Date of the booking
+
+try {
+    $result = $api_instance->getrecommendationsUserIdDateGet($userId, $date);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling RecommendationsApi->getrecommendationsUserIdDateGet: ', $e->getMessage(), PHP_EOL;
+}
+?></code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-perl">
+                              <pre class="prettyprint"><code class="language-perl">use Data::Dumper;
+use WWW::SwaggerClient::Configuration;
+use WWW::SwaggerClient::RecommendationsApi;
+
+my $api_instance = WWW::SwaggerClient::RecommendationsApi->new();
+my $userId = 56; # Integer | Numeric ID of the user
+my $date = date_example; # String | Date of the booking
+
+eval { 
+    my $result = $api_instance->getrecommendationsUserIdDateGet(userId => $userId, date => $date);
+    print Dumper($result);
+};
+if ($@) {
+    warn "Exception when calling RecommendationsApi->getrecommendationsUserIdDateGet: $@\n";
+}</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Recommendations-getrecommendationsUserIdDateGet-0-python">
+                              <pre class="prettyprint"><code class="language-python">from __future__ import print_statement
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.RecommendationsApi()
+userId = 56 # Integer | Numeric ID of the user
+date = date_example # String | Date of the booking
+
+try: 
+    # Give details of bookings of team-mates.
+    api_response = api_instance.getrecommendations_user_id_date_get(userId, date)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RecommendationsApi->getrecommendationsUserIdDateGet: %s\n" % e)</code></pre>
+                            </div>
+                          </div>
+
+                          <h2>Parameters</h2>
+
+                            <div class="methodsubtabletitle">Path parameters</div>
+                            <table id="methodsubtable">
+                                <tr>
+                                  <th width="150px">Name</th>
+                                  <th>Description</th>
+                                </tr>
+                                  <tr><td style="width:150px;">userId*</td>
+<td>
+
+
+    <div id="d2e199_getrecommendationsUserIdDateGet_userId">
+        <div class="json-schema-view">
+            <div class="primitive">
+                <span class="type">
+                    Integer
+                </span>
+
+                    <div class="inner description">
+                        Numeric ID of the user
+                    </div>
+            </div>
+                <div class="inner required">
+                    Required
+                </div>
+        </div>
+    </div>
+</td>
+</tr>
+
+                                  <tr><td style="width:150px;">date*</td>
+<td>
+
+
+    <div id="d2e199_getrecommendationsUserIdDateGet_date">
+        <div class="json-schema-view">
+            <div class="primitive">
+                <span class="type">
+                    String
+                </span>
+
+                    <div class="inner description">
+                        Date of the booking
+                    </div>
+            </div>
+                <div class="inner required">
+                    Required
+                </div>
+        </div>
+    </div>
+</td>
+</tr>
+
+                            </table>
+
+
+
+
+
+                          <h2>Responses</h2>
+                            <h3> Status: 200 - successful operation </h3>
+
+                            <ul class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-getrecommendationsUserIdDateGet-200-schema">Schema</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content" style='margin-bottom: 10px;'>
+                                <div class="tab-pane active" id="responses-getrecommendationsUserIdDateGet-200-schema">
+                                  <div id='responses-getrecommendationsUserIdDateGet-200-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                    <script>
+                                      $(document).ready(function() {
+                                        var schemaWrapper = {
+  "description" : "successful operation",
+  "schema" : {
+    "type" : "array",
+    "items" : {
+      "type" : "object",
+      "properties" : {
+        "fName" : {
+          "type" : "string"
+        },
+        "lName" : {
+          "type" : "string"
+        },
+        "floorNo" : {
+          "type" : "integer"
+        },
+        "seatId" : {
+          "type" : "integer"
+        },
+        "buildingName" : {
+          "type" : "string"
+        },
+        "buildingId" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+};
+                                        var schema = schemaWrapper.schema;
+                                        if (schema.$ref != null) {
+                                          schema = defsParser.$refs.get(schema.$ref);
+                                        } else {
+                                          schemaWrapper.definitions = defs;
+                                          $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                            console.log(err);
+                                          });
+                                        }
+
+                                        //console.log(JSON.stringify(schema));
+                                        var view = new JSONSchemaView(schema, 3);
+                                        $('#responses-getrecommendationsUserIdDateGet-200-schema-data').val(stringify(schema));
+                                        var result = $('#responses-getrecommendationsUserIdDateGet-200-schema-200');
+                                        result.empty();
+                                        result.append(view.render());
+                                      });
+                                    </script>
+                                  </div>
+                                  <input id='responses-getrecommendationsUserIdDateGet-200-schema-data' type='hidden' value=''></input>
                                 </div>
                             </div>
 
